@@ -16,13 +16,13 @@
 					</label>
 				</div>
 				<div>
-					<label for="mail">
-						<input type="email" placeholder="メールアドレス" class="mail">
+					<label for="tel">
+						<input type="tel" placeholder="電話番号" class="tel">
 					</label>
 				</div>
 				<div>
-					<label for="tel">
-						<input type="tel" placeholder="電話番号" class="tel">
+					<label for="mail">
+						<input type="email" placeholder="メールアドレス" class="mail">
 					</label>
 				</div>
 				<div>
