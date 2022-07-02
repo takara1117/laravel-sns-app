@@ -30,7 +30,7 @@
 	<div class="account_registration">
 		<div class="round">
 			<p class="sentence">アカウントをお持ちでないですか？</p>
-			<a href="#" class="registration">登録する</a>
+			<a href="/member/createMember" class="registration">登録する</a>
 		</div>
 	</div>
 </body>
