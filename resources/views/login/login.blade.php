@@ -11,7 +11,7 @@
 			<form action="#">
 				<div>
 					<label for="tel_mail">
-						<input type="email" placeholder="電話番号、メールアドレス" class="mail" required>
+						<input type="email" placeholder="電話番号、メールアドレス" class="tel_mail" required>
 					</label>
 				</div>
 				<div>
