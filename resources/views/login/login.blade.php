@@ -10,8 +10,8 @@
 			<img src="{{ asset('images/Instagram_logo.png')}}">
 			<form action="#">
 				<div>
-					<label for="mail">
-						<input type="email" placeholder="メールアドレス" class="mail" required>
+					<label for="tel_mail">
+						<input type="email" placeholder="電話番号、メールアドレス" class="mail" required>
 					</label>
 				</div>
 				<div>
@@ -50,7 +50,7 @@
 	}
 	.forms {
 		text-align:center;
-		padding-top: 25%;
+		padding-top: 20%;
 	}
 	img {
 		width: 18%;
@@ -58,7 +58,7 @@
 	div {
 		padding-top: 2%;
 	}
-	.mail {
+	.tel_mail {
 		width: 25%;
 		height: 4%;
 	}
