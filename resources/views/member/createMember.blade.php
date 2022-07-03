@@ -9,7 +9,7 @@
 	<div class="forms">
 		<div class="round">
 			<img src="{{ asset('images/Instagram_logo.png')}}">
-			<form action="#" method="post">
+			<form action="/member/confirmMember" method="post">
 				<div>
 					<label for="name">
 						<input type="text" placeholder="氏名" class="name">
