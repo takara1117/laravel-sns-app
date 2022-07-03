@@ -12,4 +12,9 @@
 		{
 			return view('member.createMember');
 		}
+
+		public function confirm()
+		{
+			return view('member.confirmMember');
+		}
 	}
