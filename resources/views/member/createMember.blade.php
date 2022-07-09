@@ -9,30 +9,31 @@
 	<div class="forms">
 		<div class="round">
 			<img src="{{ asset('images/Instagram_logo.png')}}">
-			<form action="/member/confirmMember" method="post">
+			<form action="/member/create" method="post">
+			@csrf
 				<div>
 					<label for="name">
-						<input type="text" placeholder="氏名" class="name">
+						<input type="text" name="name" placeholder="氏名" class="name" value="{{old('name')}}">
 					</label>
 				</div>
 				<div>
-					<label for="tel">
-						<input type="tel" placeholder="電話番号" class="tel">
+					<label for="phone">
+						<input type="phone" name="phone" placeholder="電話番号" class="phone" value="{{old('phone')}}">
 					</label>
 				</div>
 				<div>
 					<label for="mail">
-						<input type="email" placeholder="メールアドレス" class="mail">
+						<input type="email" name="email" placeholder="メールアドレス" class="mail" value="{{old('email')}}">
 					</label>
 				</div>
 				<div>
 					<label for="pass">
-						<input type="password" placeholder="パスワード" class="pass">
+						<input type="password" name="password" placeholder="パスワード" class="pass">
 					</label>
 				</div>
 
 				<div class="submit">
-					<input type="submit" class="send" value="登録する">
+					<input type="submit" class="send" value="入力内容確認">
 				</div>
 			</form>
 		</div>
@@ -70,7 +71,7 @@
 		width: 25%;
 		height: 4%;
 	}
-	.tel {
+	.phone {
 		width: 25%;
 		height: 4%;
 	}
