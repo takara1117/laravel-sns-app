@@ -11,12 +11,12 @@
 			<form action="#">
 				<div>
 					<label for="tel_mail">
-						<input type="email" placeholder="電話番号、メールアドレス" class="tel_mail" required>
+						<input type="email" placeholder="電話番号、メールアドレス" class="tel_mail">
 					</label>
 				</div>
 				<div>
 					<label for="pass">
-						<input type="password" placeholder="パスワード" class="pass" required>
+						<input type="password" placeholder="パスワード" class="pass">
 					</label>
 				</div>
 				
