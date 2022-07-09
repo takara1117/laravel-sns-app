@@ -32,8 +32,6 @@
 				'confirmPassword' => 'required',
 			]);
 
-			// $request->password
-
 			$inputs = $request->all();
 
 			return view('member.confirmMember', [ 'inputs' => $inputs ]);
