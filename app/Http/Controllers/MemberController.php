@@ -36,9 +36,4 @@
 
 			return view('member.confirmMember', [ 'inputs' => $inputs ]);
 		}
-
-		// public function confirm()
-		// {
-		// 	return redirect('member.confirmMember');
-		// }
 	}
