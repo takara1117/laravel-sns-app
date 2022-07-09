@@ -31,6 +31,11 @@
 						<input type="password" name="password" placeholder="パスワード" class="pass">
 					</label>
 				</div>
+				<div>
+					<label for="confirmPass">
+						<input type="password" name="confirmPassword" placeholder="確認パスワード" class="confirmPass">
+					</label>
+				</div>
 
 				<div class="submit">
 					<input type="submit" class="send" value="入力内容確認">
@@ -76,6 +81,10 @@
 		height: 4%;
 	}
 	.pass {
+		width: 25%;
+		height: 4%;
+	}
+	.confirmPass {
 		width: 25%;
 		height: 4%;
 	}
