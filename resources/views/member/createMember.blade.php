@@ -16,26 +16,45 @@
 						<input type="text" name="name" placeholder="氏名" class="name" value="{{old('name')}}">
 					</label>
 				</div>
+				@if ($errors->has('name'))
+				{{$errors->first('name')}}
+				@endif
+
 				<div>
 					<label for="phone">
 						<input type="phone" name="phone" placeholder="電話番号" class="phone" value="{{old('phone')}}">
 					</label>
 				</div>
+				@if ($errors->has('phone'))
+				{{$errors->first('phone')}}
+				@endif
+
 				<div>
 					<label for="mail">
 						<input type="email" name="email" placeholder="メールアドレス" class="mail" value="{{old('email')}}">
 					</label>
 				</div>
+				@if ($errors->has('email'))
+				{{$errors->first('email')}}
+				@endif
+
 				<div>
 					<label for="pass">
 						<input type="password" name="password" placeholder="パスワード" class="pass">
 					</label>
 				</div>
+				@if ($errors->has('password'))
+				{{$errors->first('password')}}
+				@endif
+
 				<div>
 					<label for="confirmPass">
 						<input type="password" name="confirmPassword" placeholder="確認パスワード" class="confirmPass">
 					</label>
 				</div>
+				@if ($errors->has('confirmPassword'))
+				{{$errors->first('confirmPassword')}}
+				@endif
 
 				<div class="submit">
 					<input type="submit" class="send" value="入力内容確認">

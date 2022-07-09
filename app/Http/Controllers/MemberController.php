@@ -5,6 +5,8 @@
 	use Illuminate\Http\Request;
 	use Illuminate\Support\Facades\Hash;
 
+	use Illuminate\Validation\Rules\Password;
+
 	use App\Http\Controllers\Controller;
 	use App\Models\Member;
 
@@ -18,11 +20,19 @@
 		public function create(Request $request) 
 		{
 			$request->validate([
-				'name' => 'required',
+				'name' => 'required', 'string', 'max:255',
 				'phone' => 'required | numeric | digits_between:8,11',
 				'email' => 'required', 'string', 'email', 'max:255', 'unique:customers',
-				'password' => 'required'
+				'password' => ['required', 'max: 128', 
+								Password::min(8)
+								->letters()
+								->mixedCase()
+								->numbers()
+								->uncompromised()],
+				'confirmPassword' => 'required',
 			]);
+
+			// $request->password
 
 			$inputs = $request->all();
 
