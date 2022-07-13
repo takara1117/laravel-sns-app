@@ -103,9 +103,9 @@ return [
     'numeric' => ':attributeは数値のみで入力して下さい。',
     'password' => [
         'letters' => ":attributeは、少なくとも1つの文字が含まれていなければなりません。",
-        'mixed' => ":attributeは、少なくとも大文字と小文字を1つずつ含める必要があります。",
-        'numbers' => ":attributeは、少なくとも1つの数字が含まれていなければなりません。",
-        'symbols' => ":attributeは、少なくとも1つの記号が含まれていなければなりません。",
+        'mixed' => ":attributeは大文字と小文字を1つずつ含める必要があります。",
+        'numbers' => ":attributeは1つ以上の数字を含める必要があります。。",
+        'symbols' => ":attributeは1つの記号が含まれていなければなりません。",
         'uncompromised' => "この:attributeは過去に漏洩したことのある脆弱な:attributeです。別の:attributeを入力してください。"
     ],
     'present' => 'The :attribute field must be present.',
