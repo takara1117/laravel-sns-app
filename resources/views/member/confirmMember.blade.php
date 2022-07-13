@@ -9,7 +9,7 @@
 	<div class="forms">
 		<div class="round">
 			<img src="{{ asset('images/Instagram_logo.png')}}">
-			<form action="#" method="post">
+			<form action="/member/create" method="post">
 			@csrf
 				<div>
 					<label for="name">
@@ -30,8 +30,9 @@
 					</label>
 				</div>
 				
+
 				<div class="submit">
-					<input type="submit" class="send" value="入力内容修正">
+					<input type="submit" class="back" value="入力内容修正">
 				</div>
 				<div class="submit">
 					<input type="submit" class="send" value="登録する">
@@ -49,6 +50,7 @@
 		max-width: 1280px;
 		margin: auto;
 		background: #f5f5f5;
+		font-size: 1.2em;
 	}
 	.round {
 		padding: 20px;
@@ -81,11 +83,23 @@
 		width: 25%;
 		height: 4%;
 	}
+
+	.back {
+		width: 25%;
+		height: 4%;
+		color: #ffffff;
+		font-size: 1em;
+		font-weight: bold;
+		background-color: #fd5454;
+		border: none;
+		border-radius: 7px;
+		cursor: pointer;
+	}
 	.send {
 		width: 25%;
 		height: 4%;
 		color: #ffffff;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-weight: bold;
 		background-color: #1e90ff;
 		border: none;

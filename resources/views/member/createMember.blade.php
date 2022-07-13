@@ -9,7 +9,7 @@
 	<div class="forms">
 		<div class="round">
 			<img src="{{ asset('images/Instagram_logo.png')}}">
-			<form action="/member/create" method="post">
+			<form action="/member/confirm" method="post">
 			@csrf
 				<div>
 					<label for="name">

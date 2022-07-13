@@ -17,7 +17,7 @@
 			return view('member.createMember');
 		}
 
-		public function create(Request $request) 
+		public function confirm(Request $request) 
 		{
 			$request->validate([
 				'name' => 'required', 'string', 'max:255',
@@ -35,5 +35,17 @@
 			$inputs = $request->all();
 
 			return view('member.confirmMember', [ 'inputs' => $inputs ]);
+		}
+
+
+		public function create(Request $request)
+		{
+			$member = Member::create([
+				'name' => $request->name,
+				'phone' => $request->phone,
+				'email' => $request->email,
+				'password' => Hash::make($request->password),
+			]);
+			return view('member.confirmMember');
 		}
 	}
