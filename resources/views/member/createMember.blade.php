@@ -57,12 +57,12 @@
 
 				<div>
 					<label for="confirmPass">
-						<input type="password" name="confirmPassword" placeholder="確認パスワード" class="confirmPass">
+						<input type="password" name="password_confirmation" placeholder="確認パスワード" class="confirmPass">
 					</label>
 				</div>
 				<div class="err_msg">
-					@if ($errors->has('confirmPassword'))
-					{{$errors->first('confirmPassword')}}
+					@if ($errors->has('password_confirmation'))
+					{{$errors->first('password_confirmation')}}
 					@endif
 				</div>
 
