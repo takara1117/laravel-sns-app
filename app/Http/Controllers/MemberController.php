@@ -29,7 +29,7 @@
 								->mixedCase()
 								->numbers()
 								->uncompromised()],
-				'confirmPassword' => 'required',
+				'password_confirmation' => 'required',
 			]);
 
 			$inputs = $request->all();
